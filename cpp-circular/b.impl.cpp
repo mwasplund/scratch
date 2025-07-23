@@ -2,8 +2,9 @@ module;
 
 #include <string_view>
 
-module MyModule:B;
+module MyModule:B.Impl;
 
+import :B;
 import :A;
 
 std::string_view ClassB::GetName()
